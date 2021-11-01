@@ -15,7 +15,7 @@ var dataToSend25=JSON.stringify(elementomoto);
 $.ajax({
       dataType: 'json',
       data:dataToSend25,
-      url:"http://150.230.94.38:8080/api/Motorbike/save",
+      url:"http://140.238.187.245:8080/api/Motorbike/save",
       type:'POST',
       contentType:'application/json',
       success:function(response1) {
@@ -32,7 +32,7 @@ function obtenerItems(){
 
   $.ajax({
       dataType: 'json',
-      url:"http://150.230.94.38:8080/api/Motorbike/all",
+      url:"http://140.238.187.245:8080/api/Motorbike/all",
       type:'GET',
       
       success:function(response2) {
@@ -77,7 +77,7 @@ var dataToSend=JSON.stringify(elementomoto2);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://150.230.94.38:8080/api/Motorbike/"+idElemento,
+      url:"http://140.238.187.245:8080/api/Motorbike/"+idElemento,
       type:'DELETE',
       contentType:'application/json',
       success:function(response3) {
@@ -98,7 +98,7 @@ function obtenerItemEspecificomoto(idItemmoto){
   $.ajax({
       dataType: 'json', 
       data: {id:idItemmoto},
-      url:"http://150.230.94.38:8080/api/Motorbike/"+idItemmoto,
+      url:"http://140.238.187.245:8080/api/Motorbike/"+idItemmoto,
       type:'GET',
       success:function(response4) {
 
@@ -131,7 +131,7 @@ var elemento3={
 $.ajax({
       dataType: 'json',
       data:dataToSend4,
-      url:"http://150.230.94.38:8080/api/Motorbike/update",
+      url:"http://140.238.187.245:8080/api/Motorbike/update",
       type:'PUT',
       contentType:'application/json',
       success:function(response4) {
@@ -161,7 +161,7 @@ var dataToSend6=JSON.stringify(elemento4);
 $.ajax({
       dataType: 'json',
       data:dataToSend6,
-      url:"http://150.230.94.38:8080/api/Client/save",
+      url:"http://140.238.187.245:8080/api/Client/save",
       type:'POST',
       contentType:'application/json',
       success:function(response5) {
@@ -179,7 +179,7 @@ function obtenerclientes(){
 
   $.ajax({
       dataType: 'json',
-      url:"http://150.230.94.38:8080/api/Client/all",
+      url:"http://140.238.187.245:8080/api/Client/all",
       type:'GET',
       
       success:function(response6) {
@@ -224,7 +224,7 @@ console.log(idElemento1);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://150.230.94.38:8080/api/Client/"+idElemento1,
+      url:"http://140.238.187.245:8080/api/Client/"+idElemento1,
       type:'DELETE',
       contentType:'application/json',
       success:function(response7) {
@@ -246,7 +246,7 @@ function obtenerItemEspecificocliente(idItem2){
   $.ajax({
       dataType: 'json', 
       data: {id:idItem2},
-      url:"http://150.230.94.38:8080/api/Client/"+idItem2,
+      url:"http://140.238.187.245:8080/api/Client/"+idItem2,
       type:'GET',
       success:function(response8) {
         
@@ -279,7 +279,7 @@ $.ajax({
       dataType: 'json',
       data:dataToSend,
       contentType:'application/json',
-      url:"http://150.230.94.38:8080/api/Client/update",
+      url:"http://140.238.187.245:8080/api/Client/update",
       type:'PUT',
       
       success:function(response9) {
@@ -310,7 +310,7 @@ var dataToSend7=JSON.stringify(elemento);
 $.ajax({
       dataType: 'json',
       data:dataToSend7,
-      url:"http://150.230.94.38:8080/api/Message/save",
+      url:"http://140.238.187.245:8080/api/Message/save",
       type:'POST',
       contentType:'application/json',
       success:function(response) {
@@ -330,7 +330,7 @@ function obtenermensajes(){
 
   $.ajax({
       dataType: 'json',
-      url:"http://150.230.94.38:8080/api/Message/all",
+      url:"http://140.238.187.245:8080/api/Message/all",
       type:'GET',
       
       success:function(response10) {
@@ -373,7 +373,7 @@ var dataToSend=JSON.stringify(elemento6);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://150.230.94.38:8080/api/Message/"+idElemento4,
+      url:"http://140.238.187.245:8080/api/Message/"+idElemento4,
       type:'DELETE',
       contentType:'application/json',
       success:function(response11) {
@@ -394,7 +394,7 @@ function obtenerItemEspecificomensaje(idItem5){
   $.ajax({
       dataType: 'json', 
       data: {id:idItem5},
-      url:"http://150.230.94.38:8080/api/Message/"+idItem5,
+      url:"http://140.238.187.245:8080/api/Message/"+idItem5,
       type:'GET',
       success:function(response12) {
         $("#Id").val(response12.idMessage);
@@ -424,7 +424,7 @@ $.ajax({
       dataType: 'json',
       data:dataToSend,
       contentType:'application/json',
-      url:"http://150.230.94.38:8080/api/Message/update",
+      url:"http://140.238.187.245:8080/api/Message/update",
       type:'PUT',
       contentType:'application/json',
       success:function(response13) {
@@ -455,7 +455,7 @@ var dataToSend7=JSON.stringify(elemento8);
 $.ajax({
       dataType: 'json',
       data:dataToSend7,
-      url:"http://150.230.94.38:8080/api/Category/save",
+      url:"http://140.238.187.245:8080/api/Category/save",
       type:'POST',
       contentType:'application/json',
       success:function(response) {
@@ -474,7 +474,7 @@ function VerCategorias(){
 
   $.ajax({
       dataType: 'json',
-      url:"http://150.230.94.38:8080/api/Category/all",
+      url:"http://140.238.187.245:8080/api/Category/all",
       type:'GET',
       
       success:function(response10) {
@@ -516,7 +516,7 @@ var dataToSend=JSON.stringify(elemento9);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://150.230.94.38:8080/api/Category/"+idElemento2,
+      url:"http://140.238.187.245:8080/api/Category/"+idElemento2,
       type:'DELETE',
       contentType:'application/json',
       success:function(response12) {
@@ -537,7 +537,7 @@ function obtenerItemEspecificocategoria(idItem1){
   $.ajax({
       dataType: 'json', 
       data: {id:idItem1},
-      url:"http://150.230.94.38:8080/api/Category/"+idItem1,
+      url:"http://140.238.187.245:8080/api/Category/"+idItem1,
       type:'GET',
       success:function(response12) {
         $("#NameCategory").val(response12.name);
@@ -565,7 +565,7 @@ $.ajax({
       dataType: 'json',
       data:dataToSend,
       contentType:'application/json',
-      url:"http://150.230.94.38:8080/api/Category/update",
+      url:"http://140.238.187.245:8080/api/Category/update",
       type:'PUT',
       contentType:'application/json',
       success:function(response13) {
@@ -598,7 +598,7 @@ var dataToSend7=JSON.stringify(elemento8);
 $.ajax({
       dataType: 'json',
       data:dataToSend7,
-      url:"http://150.230.94.38:8080/api/Reservation/save",
+      url:"http://140.238.187.245:8080/api/Reservation/save",
       type:'POST',
       contentType:'application/json',
       success:function(response) {
@@ -617,7 +617,7 @@ function VerReservas(){
 
   $.ajax({
       dataType: 'json',
-      url:"http://150.230.94.38:8080/api/Reservation/all",
+      url:"http://140.238.187.245:8080/api/Reservation/all",
       type:'GET',
       
       success:function(response11) {
@@ -660,7 +660,7 @@ var dataToSend=JSON.stringify(elemento1);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://150.230.94.38:8080/api/Reservation/"+idElemento3,
+      url:"http://140.238.187.245:8080/api/Reservation/"+idElemento3,
       type:'DELETE',
       contentType:'application/json',
       success:function(response14) {
@@ -681,7 +681,7 @@ function obtenerItemEspecificoreserva(idItem3){
   $.ajax({
       dataType: 'json', 
       data: {id:idItem3},
-      url:"http://150.230.94.38:8080/api/Reservation/"+idItem3,
+      url:"http://140.238.187.245:8080/api/Reservation/"+idItem3,
       type:'GET',
       success:function(response13) {
         $("#idReservation").val(response13.idReservation);
@@ -714,7 +714,7 @@ $.ajax({
       dataType: 'json',
       data:dataToSend,
       contentType:'application/json',
-      url:"http://150.230.94.38:8080/api/Reservation/update",
+      url:"http://140.238.187.245:8080/api/Reservation/update",
       type:'PUT',
       contentType:'application/json',
       success:function(response13) {
@@ -728,4 +728,102 @@ $.ajax({
 
   VerReservas();
   VerReservas();
+}
+
+///////////////// Formato Reportes ///////////////////////////////////////////
+
+//////// LImpiar Pantalla
+
+function limpiarpantalla(){
+  $("#misReportesReservas").html("");
+}
+
+//////// Ver Status Reservas
+function VerStatusReservas(){
+
+  $.ajax({
+      dataType: 'json',
+      url:"http://140.238.187.245:8080/api/Reservation/report-status",
+      type:'GET',
+      
+      success:function(response15) {
+
+        var misItems1=response15;
+        console.log(misItems1);
+        $("#misReportesReservas").html("");
+        $("#misReportesReservas").append("<tr>");
+        $("#misReportesReservas").append("<td>"+misItems1.completed+"</td>");
+        $("#misReportesReservas").append("<td>"+misItems1.cancelled+"</td>");
+        $("#misReportesReservas").append('<td><button onclick="limpiarpantalla()">Return</button></td>');
+        $("#misReportesReservas").append("</tr>");
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+      }
+  });
+
+}
+
+//////// Ver Reservas Clientes 
+function VerRervasClientes(){
+
+  $.ajax({
+      dataType: 'json',
+      url:"http://140.238.187.245:8080/api/Reservation/report-clients",
+      type:'GET',
+      
+      success:function(response16) {
+
+        var misItems5=response16;
+        console.log(misItems5);
+
+        $("#misReportesReservas").html("");
+        misItems5.forEach(function(item){
+        {
+            $("#misReportesReservas").append("<tr>");
+            $("#misReportesReservas").append("<td>"+item.client.name+"</td>");
+            $("#misReportesReservas").append("<td>"+item.total+"</td>");
+            $("#misReportesReservas").append('<td><button onclick="limpiarpantalla()">Return</button></td>');
+            $("#miResultadoreserva").append("</tr>");
+          }
+        });
+      },
+      
+      error: function(jqXHR, textStatus, errorThrown) {
+            
+      }
+  });
+
+}
+
+//////// Ver Reservas por fehcas 
+function VerReservasPorFecha(){
+  var startdate1 = $("#startdate").val();
+  var enddate1 = $("#enddate").val();
+  $.ajax({
+      dataType: 'json',
+      url:"http://140.238.187.245:8080/api/Reservation/report-dates/"+startdate1+"/"+enddate1,
+      type:'GET',
+      
+      success:function(response17) {
+        var misItems6=response17;
+        console.log(misItems6);
+        $("#misReportesReservas").html("");
+        misItems6.forEach(function(item){
+        {
+            $("#misReportesReservas").append("<tr>");
+            $("#misReportesReservas").append("<td>"+item.client.name+"</td>");            
+            $("#misReportesReservas").append("<td>"+item.motorbike.name+"</td>");
+            $("#misReportesReservas").append("<td>"+item.startDate+"</td>");
+            $("#misReportesReservas").append("<td>"+item.devolutionDate+"</td>");
+            $("#misReportesReservas").append('<td><button onclick="limpiarpantalla()">Return</button></td>');
+            $("#miResultadoreserva").append("</tr>");
+          }
+        });
+      },
+      
+      error: function(jqXHR, textStatus, errorThrown) {
+            
+      }
+  });
+
 }
