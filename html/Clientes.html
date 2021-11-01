@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		</style>
+			
+			<meta http-equiv="Access-Control-Allow-Origin" content="*">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+			<script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="obtenerclientes();">
+
+    <h1>REGISTRO CLIENTE</h1>
+
+	<input type="number" id="Id" placeholder="Id" readonly style="width : 30px">
+	<input type="text" id="Nombre" placeholder="Nombre" >
+	<input type="text" id="Email" placeholder="Email" required>
+	<input type="number" id="Age" placeholder="Edad" required>
+	<input type="text" id="Password" placeholder="Password" required>
+
+    <h1></h1>
+
+	<button onclick="registroclientes()">Agregar Cliente</button>
+
+	<button onclick="obtenerclientes()">Listado Clientes</button>
+	
+	<button onclick="actualizarclientes()">Actualizar Cliente</button>
+
+	<button onclick="location.href='index.html'">Home</button>
+    <h1></h1>
+	<div>
+
+		<table>
+			<tbody id="miResultadoclientes">
+
+</body>
+</html>
